@@ -33,10 +33,11 @@ group :doc do
 end
 
 group :development do
-  gem 'pry'
-  gem 'pry-rails'
+  gem 'guard-livereload', require: false
+	gem 'better_errors'
+	gem 'binding_of_caller'
+	gem 'rack-livereload'	
 end
-
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
