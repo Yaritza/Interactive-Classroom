@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="796a6922-c61c-45f5-a2eb-0801fd10d07a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/courses/_courses.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/index.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/courses/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/course.rb" afterPath="$PROJECT_DIR$/app/models/course.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Interactive_Classroom.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="796a6922-c61c-45f5-a2eb-0801fd10d07a" time="1393782416447" ignored="false" />
     <file path="/Gemfile" changelist="796a6922-c61c-45f5-a2eb-0801fd10d07a" time="1393179643097" ignored="false" />
-    <file path="/courses_controller.rb" changelist="796a6922-c61c-45f5-a2eb-0801fd10d07a" time="1393784706368" ignored="false" />
+    <file path="/courses_controller.rb" changelist="796a6922-c61c-45f5-a2eb-0801fd10d07a" time="1393788662770" ignored="false" />
     <file path="/index.html.erb" changelist="796a6922-c61c-45f5-a2eb-0801fd10d07a" time="1393786509549" ignored="false" />
     <file path="/_courses.html.erb" changelist="796a6922-c61c-45f5-a2eb-0801fd10d07a" time="1393786540191" ignored="false" />
+    <file path="/course.rb" changelist="796a6922-c61c-45f5-a2eb-0801fd10d07a" time="1393788970656" ignored="false" />
+    <file path="/routes.rb" changelist="796a6922-c61c-45f5-a2eb-0801fd10d07a" time="1393789675377" ignored="false" />
+    <file path="/edit.html.erb" changelist="796a6922-c61c-45f5-a2eb-0801fd10d07a" time="1393791381803" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +48,7 @@
       <file leaf-file-name="courses_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="9" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="17" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
+            <state line="13" column="10" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -62,16 +57,25 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/courses/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="19" selection-start="94" selection-end="94" vertical-scroll-proportion="-1.875">
+            <state line="3" column="23" selection-start="98" selection-end="98" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_courses.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_courses.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/courses/_courses.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="9" selection-start="89" selection-end="89" vertical-scroll-proportion="0.072">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/courses/edit.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="9" selection-start="160" selection-end="160" vertical-scroll-proportion="0.12">
               <folding />
             </state>
           </provider>
@@ -105,9 +109,12 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/courses_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/courses/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/courses/_courses.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/course.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/courses_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/courses/edit.html.erb" />
       </list>
     </option>
   </component>
@@ -622,23 +629,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="9" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
+        <state line="3" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.07188498">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/course.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
+        <state line="2" column="51" selection-start="146" selection-end="146" vertical-scroll-proportion="0.046224963">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="10" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/courses/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="94" selection-end="94" vertical-scroll-proportion="-1.875">
+        <state line="3" column="23" selection-start="98" selection-end="98" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/courses/_courses.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
@@ -650,9 +671,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/courses/_courses.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/courses/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="9" selection-start="89" selection-end="89" vertical-scroll-proportion="0.072">
+        <state line="5" column="9" selection-start="160" selection-end="160" vertical-scroll-proportion="0.12">
           <folding />
         </state>
       </provider>
